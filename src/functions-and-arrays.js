@@ -108,7 +108,7 @@ const wordsUnique = [
 function uniquifyArray(uniqueList) {
   let uniqueArray =[]
   for(let i = 0; i < uniqueList.length; i++ ){
-   if(uniqueArray.includes(uniqueList[i])){
+   if(!uniqueArray.includes(uniqueList[i])){
      uniqueArray.push(uniqueList[i])
    } 
   }
