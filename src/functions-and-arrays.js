@@ -75,7 +75,7 @@ function averageNumbers(sumarNumero) {
     for (let i = 0; i < arrayNumero; i++) {
         sum += sumarNumero[i];
     }
-      return sum / arrayNumero
+      return sum / arrayNumero;
   
   }
      console.log(averageNumbers(numbersAvg))
@@ -87,11 +87,11 @@ function averageNumbers(sumarNumero) {
 
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 function averageWordLength(sumarList){
-  i = 0;
-  sum = 0;
+  if (!sumarList.length) return null;
+  let sum = 0;
   
-  for (i = 0; i < sumarList.length; i++){
-    sum += sumarList.length;
+  for (let i = 0; i < sumarList.length; i++){
+    sum += sumarList[i].length;
   }
   return sum /sumarList.length;
 }
