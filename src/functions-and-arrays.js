@@ -148,11 +148,12 @@ const wordsCount = [
 ];
 
 function howManyTimes(repeticion) {
-  const  resultado = {}
-  for(let i = 0; i < repeticion.length; i++){
-   repeticion.forEach(el => (resultado[el] = resultado[el] + 1 || 1))
-                     }return resultado;
-   }
+  const resultado = {}
+   repeticion.forEach(el => {
+    return (resultado[el] = resultado[el] + 1 || 1);
+   })
+  return resultado
+}
  
  console.log(howManyTimes(wordsCount))
 
