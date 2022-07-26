@@ -134,14 +134,12 @@ console.log(uniquifyArray(wordsUnique));
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
 function doesWordExist(palabraExiste) {
-  for(let i = 0; i < palabraExiste.length; i++){
     if(palabraExiste.includes('valla')){
       return true; 
       } else {
         return false;
       }
     }
-  }
 console.log(doesWordExist(wordsFind))
 
 // Iteration #7: Count repetition
